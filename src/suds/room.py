@@ -4,10 +4,10 @@ class Room(thing.Thing):
 	'''
 	A place where part of the game might take place.
 	'''
-	def __init__(self, name, desc, inv, entities):
+	def __init__(self, name="Generic Room", desc="If you are seeing this Room then there was probably a bug.", inv=thing.Inventory(), entities=[]):
 		Thing.__init__(self, name, desc)
-		inv = thing.Inventory
-		pass
+		self.inv = inv
+		self.entities = entities
 
 	def to_string(self):
 
