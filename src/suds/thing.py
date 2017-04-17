@@ -38,3 +38,5 @@ class Inventory:
 			items.append(item)
 			return None
 		return item
+
+	#@todo(aaron) add remove_item
